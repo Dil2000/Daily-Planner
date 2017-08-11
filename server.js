@@ -27,13 +27,14 @@ app.set("view engine", "handlebars");
 
 var connection;
 if (process.env.JAWSDB_URL){
-  connection.mysql.createConnection(process.eng.JAWSDB_URL);
+  connection = mysql.createConnection(process.eng.JAWSDB_URL);
 } else {
   connection = mysql.createConnection({
-    host: "mna97msstjnkkp7h.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    user: " vkepj7bxyushec62",
-    password: "z6ipautgk863ehfi",
-    database: 'day_planner_db'  
+    host: 'mna97msstjnkkp7h.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    user: 'vkepj7bxyushec62',
+    password: 'z6ipautgk863ehfi',
+    database: 'day_planner_db',
+    port : '3306'
   });
 };
 
