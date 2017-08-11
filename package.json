@@ -1,0 +1,28 @@
+{
+  "name": "dil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dil2000/Daily-Planner.git"
+  },
+  "author": "dil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dil2000/Daily-Planner/issues"
+  },
+  "homepage": "https://github.com/Dil2000/Daily-Planner#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.10",
+    "method-override": "^2.3.9",
+    "mysql": "^2.14.1",
+    "weather-js": "^2.0.0"
+  }
+}
