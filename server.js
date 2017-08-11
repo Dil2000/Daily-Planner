@@ -21,7 +21,7 @@ app.set("view engine", "handlebars");
 var connection = mysql.createConnection({ 
   host: 'localhost',
   user: 'root',
-  password:'dilnelsam2017',
+  password:'',
   database: 'day_planner_db'  
 });
 
