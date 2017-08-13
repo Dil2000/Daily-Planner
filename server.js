@@ -62,31 +62,31 @@ weather.find({search: 'Alpharetta, GA', degreeType: 'C'}, function(err, result) 
 
 
 app.get("/", function(req,res){
-  connection.query("SELECT * FROM plans;", function(err,data){
-  	if (err) throw err;
-  	res.render("index",{ plans: data , wea :weatherApi});
-  });
+  // connection.query("SELECT * FROM plans;", function(err,data){
+  // 	if (err) throw err;
+  	res.render("index",{ plans: "data" , wea :weatherApi});
+  // });
 });
 
 app.post("/", function(req,res){
-  connection.query("INSERT INTO plans (plan) VALUES (?)",[req.body.plan], function(err,result){
-  	if (err) throw err;
+  // connection.query("INSERT INTO plans (plan) VALUES (?)",[req.body.plan], function(err,result){
+  // 	if (err) throw err;
   	res.redirect("/");
-  });
+  // });
 });
 
 app.delete("/:id", function(req,res){
-  connection.query("DELETE FROM plans WHERE id = ?",[req.params.id], function(err,result){
-  	if (err) throw err;
+  // connection.query("DELETE FROM plans WHERE id = ?",[req.params.id], function(err,result){
+  // 	if (err) throw err;
   	res.redirect("/");
-  });
+  // });
 });
 
 app.put("/", function(req,res){
-  connection.query("UPDATE plans SET plan = ? WHERE id = ?", [req.body.plan , req.body.id], function(err,result){
-  	if (err) throw err;
+  // connection.query("UPDATE plans SET plan = ? WHERE id = ?", [req.body.plan , req.body.id], function(err,result){
+  // 	if (err) throw err;
   	res.redirect("/");
-  });
+  // });
 });
 
 app.listen(port);
