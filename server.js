@@ -32,7 +32,7 @@ if (process.env.JAWSDB_URL){
   connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'hacktheplanet',
+    password: '',
     database: 'day_planner_db',
   });
 };
